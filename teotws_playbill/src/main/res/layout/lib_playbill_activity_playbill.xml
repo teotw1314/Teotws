@@ -32,7 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <include layout="@layout/item_playbill_date" />
+                <include layout="@layout/lib_playbill_item_playbill_date" />
             </com.oubowu.stickyitemdecoration.StickyHeadContainer>
 
         </FrameLayout>

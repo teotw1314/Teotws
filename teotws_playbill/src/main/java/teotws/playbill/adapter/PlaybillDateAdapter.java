@@ -15,7 +15,7 @@ public class PlaybillDateAdapter extends BaseQuickAdapter<DateModel, BaseViewHol
 
 
     public PlaybillDateAdapter(List<DateModel> data) {
-        super(R.layout.item_playbill_date, data);
+        super(R.layout.lib_playbill_item_playbill_date, data);
     }
 
     @Override

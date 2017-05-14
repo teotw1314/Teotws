@@ -3,11 +3,8 @@ package teotws.playbill;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
@@ -53,7 +50,7 @@ public class PlaybillActivity extends BaseSubActivity {
 
     @Override
     protected int setLayoutId() {
-        return R.layout.activity_playbill;
+        return R.layout.lib_playbill_activity_playbill;
     }
 
     @Override

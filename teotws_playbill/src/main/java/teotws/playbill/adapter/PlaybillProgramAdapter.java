@@ -19,8 +19,8 @@ public class PlaybillProgramAdapter extends BaseMultiItemQuickAdapter<PlaybillPr
 
     public PlaybillProgramAdapter(List<PlaybillProgramMultiItem> data) {
         super(data);
-        addItemType(PlaybillProgramMultiItem.TYPE_HEADER, R.layout.item_playbill_date);
-        addItemType(PlaybillProgramMultiItem.TYPE_PROGRAM, R.layout.item_playbill_program);
+        addItemType(PlaybillProgramMultiItem.TYPE_HEADER, R.layout.lib_playbill_item_playbill_date);
+        addItemType(PlaybillProgramMultiItem.TYPE_PROGRAM, R.layout.lib_playbill_item_playbill_program);
     }
 
     @Override

@@ -45,7 +45,7 @@ public class LoadingView extends FrameLayout {
     }
 
     private void initView(Context context) {
-        LayoutInflater.from(context).inflate(R.layout.view_loading_layout, this);
+        LayoutInflater.from(context).inflate(R.layout.lib_base_view_loading, this);
         LoadingView.this.setVisibility(VISIBLE);
         LoadingView.this.setEnabled(false);
         mFrameProgress = (FrameLayout) findViewById(R.id.view_loading_progress_framge);
