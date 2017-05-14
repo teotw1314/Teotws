@@ -32,8 +32,9 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 
 import se.emilsjolander.stickylistheaders.StickyListHeadersListView;
+import teotws.base.ui.activity.BaseSubActivity;
 
-public class ShoppingCartActivity extends AppCompatActivity implements View.OnClickListener {
+public class ShoppingCartActivity extends BaseSubActivity implements View.OnClickListener {
 
     private ImageView imgCart;
     private ViewGroup anim_mask_layout;
@@ -60,10 +61,15 @@ public class ShoppingCartActivity extends AppCompatActivity implements View.OnCl
         setContext.startActivity(intent);
     }
 
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shopping_cart);
+    protected int setLayoutId() {
+        return R.layout.activity_shopping_cart;
+    }
+
+    @Override
+    protected void initView() {
         nf = NumberFormat.getCurrencyInstance();
         nf.setMaximumFractionDigits(2);
         mHanlder = new Handler(getMainLooper());
@@ -71,10 +77,7 @@ public class ShoppingCartActivity extends AppCompatActivity implements View.OnCl
         typeList = GoodsItem.getTypeList();
         selectedList = new SparseArray<>();
         groupSelect = new SparseIntArray();
-        initView();
-    }
 
-    private void initView() {
         tvCount = (TextView) findViewById(R.id.tvCount);
         tvCost = (TextView) findViewById(R.id.tvCost);
         tvTips = (TextView) findViewById(R.id.tvTips);
@@ -111,6 +114,16 @@ public class ShoppingCartActivity extends AppCompatActivity implements View.OnCl
                 }
             }
         });
+
+    }
+
+    @Override
+    protected void initData() {
+
+    }
+
+    @Override
+    protected void initLogic() {
 
     }
 
