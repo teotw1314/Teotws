@@ -7,9 +7,18 @@
     android:orientation="vertical"
     tools:context="teotws.demo.TeotwsActivity">
     <include layout="@layout/lib_base_toolbar"/>
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/main_recyclerview"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/main_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <teotws.base.ui.widget.LoadingView
+            android:id="@+id/main_loading_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
 
 </LinearLayout>

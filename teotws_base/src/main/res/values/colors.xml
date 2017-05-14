@@ -3,4 +3,10 @@
     <color name="colorPrimary">#03a9f4</color>
     <color name="colorPrimaryDark">#00a0e9</color>
     <color name="colorAccent">#00a0e9</color>
+
+    <!--loadview-->
+    <color name="view_loading_error_title_color">#616161</color>
+    <color name="view_loading_error_info_color">#9f9e9e</color>
+    <color name="view_loading_loadingtext_color">#616161</color>
+    <color name="view_loading_indicator_color">#226DDD</color>
 </resources>

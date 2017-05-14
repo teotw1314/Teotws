@@ -1,6 +1,7 @@
 package teotws.demo;
 
 
+import android.os.Handler;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -17,12 +18,14 @@ import java.util.List;
 
 import butterknife.BindView;
 import teotws.base.ui.activity.BaseActivity;
+import teotws.base.ui.widget.LoadingView;
 import teotws.demo.adapter.MainRvAdapter;
 import teotws.demo.router.TeotwsRouter;
 
 public class TeotwsActivity extends BaseActivity {
 
-    RecyclerView mRecyclerView;
+    private LoadingView mLoadingView;
+    private RecyclerView mRecyclerView;
     private MainRvAdapter mAdapter;
     private List<String> mList = new ArrayList<>();
 
@@ -39,6 +42,7 @@ public class TeotwsActivity extends BaseActivity {
 
     @Override
     protected void initView() {
+        mLoadingView = (LoadingView) findViewById(R.id.main_loading_view);
         mRecyclerView = (RecyclerView) findViewById(R.id.main_recyclerview);
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
@@ -61,7 +65,13 @@ public class TeotwsActivity extends BaseActivity {
 
     @Override
     protected void initLogic() {
-
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                mLoadingView.dismiss();
+//                mLiadingView.showError();
+            }
+        }, 3000);
     }
 
     private void onClickItem(String tag) {

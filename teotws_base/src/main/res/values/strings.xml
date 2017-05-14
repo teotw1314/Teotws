@@ -3,4 +3,9 @@
 
     <!--router-->
     <string name="info_show_failed">跳转失败</string>
+
+    <!--loadingview-->
+    <string name="view_loading_loadingtext">正在加载</string>
+    <string name="view_loading_error_title">加载失败</string>
+    <string name="view_loading_error_info">请检查网络后点击页面刷新</string>
 </resources>
