@@ -30,10 +30,6 @@ public class Router {
         showFailed(setContext);
     }
 
-    public void pushShoppingCartActivity(Context setContext){
-        showFailed(setContext);
-    }
-
 
 
     public void showFailed(@Nullable Context setContext){

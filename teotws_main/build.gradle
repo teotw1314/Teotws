@@ -9,7 +9,7 @@ android {
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "android.support.testss.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -31,7 +31,6 @@ dependencies {
     compile project(':teotws_playbill')
     compile project(':teotws_stickyitemecoration')
     compile project(':teotws_umeng')
-    compile project(':teotws_shoppingcart')
     compile project(':teotws_base')
 
     //https://github.com/orhanobut/logger

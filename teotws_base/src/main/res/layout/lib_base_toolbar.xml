@@ -7,7 +7,7 @@
     android:minHeight="?attr/actionBarSize">
 
     <TextView
-        android:id="@+id/text_lib_base_toolbar_title"
+        android:id="@+id/text_base_toolbar_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

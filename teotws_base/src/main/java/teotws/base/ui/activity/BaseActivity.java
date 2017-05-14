@@ -24,26 +24,26 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(setLayoutId());
-        initToolbar();
+        initToolBar();
         initView();
         initData();
         initLogic();
     }
 
-    protected abstract @LayoutRes
-    int setLayoutId();
-
-    protected void initToolbar(){
+    protected void initToolBar(){
         toolbar = (Toolbar) findViewById(R.id.toolbar_lib_base);
-        titleText = (TextView) findViewById(R.id.text_lib_base_toolbar_title);
-        titleText.setText(setToolbarTitle());
         setSupportActionBar(this.toolbar);
+        titleText = (TextView) toolbar.findViewById(R.id.text_base_toolbar_title);
+        titleText.setText(setToolbarTitle());
         if(getSupportActionBar() != null){
             getSupportActionBar().setElevation(0);
             getSupportActionBar().setDisplayShowTitleEnabled(false);
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         }
     }
+
+    protected abstract @LayoutRes
+    int setLayoutId();
 
     protected abstract String setToolbarTitle();
 

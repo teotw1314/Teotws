@@ -3,7 +3,9 @@ package teotws.demo;
 
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.OnItemClickListener;
@@ -31,8 +33,9 @@ public class TeotwsActivity extends BaseActivity {
 
     @Override
     protected String setToolbarTitle() {
-        return "TEOTWS";
+        return "Teotws";
     }
+
 
     @Override
     protected void initView() {
@@ -65,7 +68,7 @@ public class TeotwsActivity extends BaseActivity {
         if (tag.equals("PlayBill")) {
             TeotwsRouter.defaultRouter().pushPlayBillActivity(this);
         }else if(tag.equals("ShoppingCart")){
-            TeotwsRouter.defaultRouter().pushShoppingCartActivity(this);
+
         }
     }
 

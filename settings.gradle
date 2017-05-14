@@ -1,1 +1,1 @@
-include ':teotws_main', ':teotws_umeng', ':teotws_shoppingcart', ':teotws_stickyitemecoration', ':teotws_playbill', ':teotws_base'
+include ':teotws_main', ':teotws_umeng', ':teotws_stickyitemecoration', ':teotws_playbill', ':teotws_base'

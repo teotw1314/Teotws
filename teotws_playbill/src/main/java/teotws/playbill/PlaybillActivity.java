@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
@@ -19,8 +20,6 @@ import com.oubowu.stickyitemdecoration.StickyItemDecoration;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import teotws.base.ui.activity.BaseSubActivity;
 import teotws.playbill.adapter.PlaybillDateAdapter;
 import teotws.playbill.adapter.PlaybillProgramMultiItem;
@@ -57,14 +56,15 @@ public class PlaybillActivity extends BaseSubActivity {
         return R.layout.activity_playbill;
     }
 
-    @NonNull
     @Override
     protected String setToolbarTitle() {
         return "PlayBill";
     }
 
+
     @Override
     protected void initView() {
+
         mDateRecyclerView = (RecyclerView) findViewById(R.id.playbill_date_rv);
         mProgramRecyclerView = (RecyclerView) findViewById(R.id.playbill_program_rv);
         mStickyHead = (StickyHeadContainer) findViewById(R.id.playbill_stickyhead);

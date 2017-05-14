@@ -2,32 +2,41 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/playbill_date_rv"
-        android:layout_width="100dp"
-        android:layout_height="match_parent"
-        android:background="@color/playbill_date_listview_bg" />
+    <include layout="@layout/lib_base_toolbar" />
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/playbill_program_rv"
-            android:layout_width="match_parent"
+            android:id="@+id/playbill_date_rv"
+            android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:background="@color/playbill_program_listview_bg" />
+            android:background="@color/playbill_date_listview_bg" />
 
-        <com.oubowu.stickyitemdecoration.StickyHeadContainer
-            android:id="@+id/playbill_stickyhead"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
-            <include layout="@layout/item_playbill_date" />
-        </com.oubowu.stickyitemdecoration.StickyHeadContainer>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/playbill_program_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/playbill_program_listview_bg" />
 
-    </FrameLayout>
+            <com.oubowu.stickyitemdecoration.StickyHeadContainer
+                android:id="@+id/playbill_stickyhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/item_playbill_date" />
+            </com.oubowu.stickyitemdecoration.StickyHeadContainer>
+
+        </FrameLayout>
+    </LinearLayout>
+
 
 </LinearLayout>

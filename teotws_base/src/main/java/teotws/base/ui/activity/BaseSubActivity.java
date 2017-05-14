@@ -19,6 +19,11 @@ public abstract class BaseSubActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
     }
 
+    protected void initToolBar(){
+        super.initToolBar();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
     @Override
     public void finish() {
         super.finish();

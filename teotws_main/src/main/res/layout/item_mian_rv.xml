@@ -27,6 +27,7 @@
             android:paddingLeft="@dimen/item_main_appname_padding_left"
             android:paddingRight="@dimen/item_main_appname_padding_right"
             android:text="AppName"
+            android:textColor="@color/base_black"
             android:textSize="@dimen/item_main_appname_size" />
 
         <ImageView
