@@ -3,13 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Teotws.iml" filepath="$PROJECT_DIR$/Teotws.iml" />
-      <module fileurl="file://D:\as\Teotws\teotws_main\app.iml" filepath="D:\as\Teotws\teotws_main\app.iml" />
-      <module fileurl="file://D:\as\Teotws\teotws_stickyitemecoration\library_stickyitemecoration.iml" filepath="D:\as\Teotws\teotws_stickyitemecoration\library_stickyitemecoration.iml" />
-      <module fileurl="file://D:\Dropbox\Dropbox\Teotws\library_umeng\libraryumeng.iml" filepath="D:\Dropbox\Dropbox\Teotws\library_umeng\libraryumeng.iml" />
-      <module fileurl="file://D:\Dropbox\Dropbox\Teotws\library_stickyitemecoration\llibrary_stickyitemecoration.iml" filepath="D:\Dropbox\Dropbox\Teotws\library_stickyitemecoration\llibrary_stickyitemecoration.iml" />
-      <module fileurl="file://D:\as\Teotws\teotws_playbill\module_playbill.iml" filepath="D:\as\Teotws\teotws_playbill\module_playbill.iml" />
-      <module fileurl="file://D:\as\Teotws\teotws_shoppingcart\module_shoppingcart.iml" filepath="D:\as\Teotws\teotws_shoppingcart\module_shoppingcart.iml" />
-      <module fileurl="file://D:\Dropbox\Dropbox\Teotws\module_playbill\playbill.iml" filepath="D:\Dropbox\Dropbox\Teotws\module_playbill\playbill.iml" />
       <module fileurl="file://$PROJECT_DIR$/teotws_base/teotws_base.iml" filepath="$PROJECT_DIR$/teotws_base/teotws_base.iml" />
       <module fileurl="file://$PROJECT_DIR$/teotws_main/teotws_main.iml" filepath="$PROJECT_DIR$/teotws_main/teotws_main.iml" />
       <module fileurl="file://$PROJECT_DIR$/teotws_playbill/teotws_playbill.iml" filepath="$PROJECT_DIR$/teotws_playbill/teotws_playbill.iml" />

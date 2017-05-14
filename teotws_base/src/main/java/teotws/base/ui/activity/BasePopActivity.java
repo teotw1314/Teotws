@@ -10,7 +10,7 @@ import teotws.base.R;
  * Created by skyland on 2017/5/14
  */
 
-public abstract class BasePopActivity extends BaseActivity{
+public abstract class BasePopActivity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -21,7 +21,7 @@ public abstract class BasePopActivity extends BaseActivity{
     @Override
     public void finish() {
         super.finish();
-        overridePendingTransition( R.anim.slide_in_top, R.anim.slide_out_bottom);
+        overridePendingTransition(R.anim.slide_in_top, R.anim.slide_out_bottom);
     }
 
     @Override

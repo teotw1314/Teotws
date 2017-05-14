@@ -11,7 +11,7 @@ import teotws.base.R;
  * Created by skyland on 2017/5/14
  */
 
-public abstract class BaseSubActivity extends BaseActivity{
+public abstract class BaseSubActivity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

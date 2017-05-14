@@ -56,16 +56,22 @@ public class ShoppingCartActivity extends BaseSubActivity implements View.OnClic
     private NumberFormat nf;
     private Handler mHanlder;
 
+
+
     public static void startActivity(@NonNull Context setContext) {
         Intent intent = new Intent(setContext, ShoppingCartActivity.class);
         setContext.startActivity(intent);
     }
 
-
-
     @Override
     protected int setLayoutId() {
         return R.layout.activity_shopping_cart;
+    }
+
+    @NonNull
+    @Override
+    protected String setToolbarTitle() {
+        return "ShoppingCart";
     }
 
     @Override

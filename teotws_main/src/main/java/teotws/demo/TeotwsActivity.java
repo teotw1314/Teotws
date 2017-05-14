@@ -30,6 +30,11 @@ public class TeotwsActivity extends BaseActivity {
     }
 
     @Override
+    protected String setToolbarTitle() {
+        return "TEOTWS";
+    }
+
+    @Override
     protected void initView() {
         mRecyclerView = (RecyclerView) findViewById(R.id.main_recyclerview);
 

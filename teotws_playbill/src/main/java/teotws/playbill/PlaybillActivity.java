@@ -57,6 +57,12 @@ public class PlaybillActivity extends BaseSubActivity {
         return R.layout.activity_playbill;
     }
 
+    @NonNull
+    @Override
+    protected String setToolbarTitle() {
+        return "PlayBill";
+    }
+
     @Override
     protected void initView() {
         mDateRecyclerView = (RecyclerView) findViewById(R.id.playbill_date_rv);
