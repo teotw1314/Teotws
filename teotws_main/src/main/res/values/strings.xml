@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Teotws</string>
+
+    <array name="app_list">
+        <item>PlayBill</item>
+        <item>ShoppingCart</item>
+    </array>
+    
+
+</resources>

@@ -59,16 +59,13 @@ public class SelectAdapter extends RecyclerView.Adapter<SelectAdapter.ViewHolder
 
         @Override
         public void onClick(View v) {
-            switch (v.getId()){
-                case R.id.tvAdd:
-                    activity.add(item, true);
-                    break;
-                case R.id.tvMinus:
-                    activity.remove(item, true);
-                    break;
-                default:
-                    break;
+            int id = v.getId();
+            if(id == R.id.tvAdd){
+                activity.add(item, true);
+            }else if(id == R.id.tvMinus){
+                activity.remove(item, true);
             }
+
         }
 
         public void bindData(GoodsItem item){

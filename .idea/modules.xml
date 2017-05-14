@@ -10,6 +10,7 @@
       <module fileurl="file://D:\as\Teotws\teotws_playbill\module_playbill.iml" filepath="D:\as\Teotws\teotws_playbill\module_playbill.iml" />
       <module fileurl="file://D:\as\Teotws\teotws_shoppingcart\module_shoppingcart.iml" filepath="D:\as\Teotws\teotws_shoppingcart\module_shoppingcart.iml" />
       <module fileurl="file://D:\Dropbox\Dropbox\Teotws\module_playbill\playbill.iml" filepath="D:\Dropbox\Dropbox\Teotws\module_playbill\playbill.iml" />
+      <module fileurl="file://$PROJECT_DIR$/teotws_base/teotws_base.iml" filepath="$PROJECT_DIR$/teotws_base/teotws_base.iml" />
       <module fileurl="file://$PROJECT_DIR$/teotws_main/teotws_main.iml" filepath="$PROJECT_DIR$/teotws_main/teotws_main.iml" />
       <module fileurl="file://$PROJECT_DIR$/teotws_playbill/teotws_playbill.iml" filepath="$PROJECT_DIR$/teotws_playbill/teotws_playbill.iml" />
       <module fileurl="file://$PROJECT_DIR$/teotws_shoppingcart/teotws_shoppingcart.iml" filepath="$PROJECT_DIR$/teotws_shoppingcart/teotws_shoppingcart.iml" />

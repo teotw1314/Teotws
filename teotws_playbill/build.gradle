@@ -37,6 +37,6 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
     //https://github.com/orhanobut/logger
     compile 'com.orhanobut:logger:1.15'
-
     compile project(':teotws_stickyitemecoration')
+    compile project(':teotws_base')
 }

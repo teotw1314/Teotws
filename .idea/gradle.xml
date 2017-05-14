@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/teotws_base" />
             <option value="$PROJECT_DIR$/teotws_main" />
             <option value="$PROJECT_DIR$/teotws_playbill" />
             <option value="$PROJECT_DIR$/teotws_shoppingcart" />

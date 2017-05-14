@@ -1,10 +1,10 @@
-package teotws.demo.router;
+package teotws.base.core;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
 import android.widget.Toast;
 
-import teotws.demo.R;
+import teotws.base.R;
 
 /**
  * Created by skyland on 2017/5/14

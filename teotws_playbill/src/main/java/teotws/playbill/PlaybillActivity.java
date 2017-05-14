@@ -1,5 +1,8 @@
 package teotws.playbill;
 
+import android.content.Context;
+import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -15,8 +18,10 @@ import com.oubowu.stickyitemdecoration.StickyItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import teotws.base.ui.activity.BaseSubActivity;
 import teotws.playbill.adapter.PlaybillDateAdapter;
 import teotws.playbill.adapter.PlaybillProgramMultiItem;
 import teotws.playbill.adapter.PlaybillProgramAdapter;
@@ -24,15 +29,10 @@ import teotws.playbill.bean.DateModel;
 import teotws.playbill.bean.VideoModel;
 import teotws.playbill.widget.SnappingLinearLayoutManager;
 
-public class PlaybillActivity extends AppCompatActivity {
+public class PlaybillActivity extends BaseSubActivity {
 
-    @BindView(R.id.playbill_date_rv)
     RecyclerView mDateRecyclerView;
-
-    @BindView(R.id.playbill_program_rv)
     RecyclerView mProgramRecyclerView;
-
-    @BindView(R.id.playbill_stickyhead)
     StickyHeadContainer mStickyHead;
 
     private List<PlaybillProgramMultiItem> programListData = new ArrayList<>();
@@ -46,19 +46,22 @@ public class PlaybillActivity extends AppCompatActivity {
 
     private int programSelectPos = 0;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_playbill);
 
-        initData();
-        initView();
-
-
+    public static void startActivity(@NonNull Context setContext) {
+        Intent intent = new Intent(setContext, PlaybillActivity.class);
+        setContext.startActivity(intent);
     }
 
-    private void initView(){
-        ButterKnife.bind(this);
+    @Override
+    protected int setLayoutId() {
+        return R.layout.activity_playbill;
+    }
+
+    @Override
+    protected void initView() {
+        mDateRecyclerView = (RecyclerView) findViewById(R.id.playbill_date_rv);
+        mProgramRecyclerView = (RecyclerView) findViewById(R.id.playbill_program_rv);
+        mStickyHead = (StickyHeadContainer) findViewById(R.id.playbill_stickyhead);
 
         /**
          * program list view
@@ -97,7 +100,7 @@ public class PlaybillActivity extends AppCompatActivity {
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
                 Logger.d(newState);
-                if(isMove && newState == RecyclerView.SCROLL_STATE_IDLE){
+                if (isMove && newState == RecyclerView.SCROLL_STATE_IDLE) {
                     isMove = false;
                 }
             }
@@ -107,7 +110,7 @@ public class PlaybillActivity extends AppCompatActivity {
                 super.onScrolled(recyclerView, dx, dy);
                 int first = mProgramLayoutManager.findFirstVisibleItemPosition();
                 Logger.d(first);
-                if(isMove){
+                if (isMove) {
                     return;
                 }
                 /*
@@ -170,7 +173,8 @@ public class PlaybillActivity extends AppCompatActivity {
 
     }
 
-    private void initData(){
+    @Override
+    protected void initData() {
         programListData = DataServer.getMultipleItemData();
         Logger.d(programListData.size());
         /**
@@ -187,6 +191,12 @@ public class PlaybillActivity extends AppCompatActivity {
                 programPos++;
             }
         }
+        mDateAdapter.setNewData(mDateList);
+        mProgramAdapter.setNewData(programListData);
+    }
+
+    @Override
+    protected void initLogic() {
 
     }
 
