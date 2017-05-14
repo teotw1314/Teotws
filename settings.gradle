@@ -1,1 +1,1 @@
-include ':app', ':library_umeng', ':module_shoppingcart', ':library_stickyitemecoration', ':module_playbill'
+include ':teotws_main', ':teotws_umeng', ':teotws_shoppingcart', ':teotws_stickyitemecoration', ':teotws_playbill'
