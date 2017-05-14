@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Teotws</string>
+
+    <array name="app_list">
+        <item>one</item>
+        <item>two</item>
+    </array>
+</resources>

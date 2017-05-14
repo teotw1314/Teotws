@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Teotws.iml" filepath="$PROJECT_DIR$/Teotws.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_stickyitemecoration/library_stickyitemecoration.iml" filepath="$PROJECT_DIR$/library_stickyitemecoration/library_stickyitemecoration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_umeng/library_umeng.iml" filepath="$PROJECT_DIR$/library_umeng/library_umeng.iml" />
+      <module fileurl="file://D:\Dropbox\Dropbox\Teotws\library_umeng\libraryumeng.iml" filepath="D:\Dropbox\Dropbox\Teotws\library_umeng\libraryumeng.iml" />
+      <module fileurl="file://D:\Dropbox\Dropbox\Teotws\library_stickyitemecoration\llibrary_stickyitemecoration.iml" filepath="D:\Dropbox\Dropbox\Teotws\library_stickyitemecoration\llibrary_stickyitemecoration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_playbill/module_playbill.iml" filepath="$PROJECT_DIR$/module_playbill/module_playbill.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_shoppingcart/module_shoppingcart.iml" filepath="$PROJECT_DIR$/module_shoppingcart/module_shoppingcart.iml" />
+      <module fileurl="file://D:\Dropbox\Dropbox\Teotws\module_playbill\playbill.iml" filepath="D:\Dropbox\Dropbox\Teotws\module_playbill\playbill.iml" />
+    </modules>
+  </component>
+</project>

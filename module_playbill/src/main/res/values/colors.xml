@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--playbill date-->
+    <color name="playbill_date_listview_bg">#e4e3e3</color>
+    <color name="playbill_date_text_color">#757575</color>
+    <color name="playbill_item_date_bg_color">#ddffffff</color>
+    <color name="playbill_item_date_normal_bg">#e4e3e3</color>
+    <color name="playbill_item_date_selected_bg">#ffffff</color>
+    <!--playbill program-->
+    <color name="playbill_program_listview_bg">#bcb9b9</color>
+    <color name="playbill_program_text_color">#616161</color>
+    <color name="playbill_item_program_normal_bg">#ffffff</color>
+    <color name="playbill_item_program_selected_bg">#e4e3e3</color>
+
+</resources>
