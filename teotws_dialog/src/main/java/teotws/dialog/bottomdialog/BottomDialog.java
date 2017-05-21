@@ -2,7 +2,9 @@ package teotws.dialog.bottomdialog;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.ColorInt;
+import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
@@ -84,6 +86,7 @@ public class BottomDialog extends Dialog {
         private String cancel;
         private int cancelColor;
         private int dividerColor;
+        private int optionBackgroundDrable;
         private List<Option> options = new ArrayList<>();
 
         public Builder(Context setContext) {
@@ -101,7 +104,12 @@ public class BottomDialog extends Dialog {
             return this;
         }
 
-        public Builder addOption(@NonNull String name, @ColorInt int color, @NonNull OnOptionClickListener listener) {
+        public Builder setOpitonBackgroundDrable(@DrawableRes int drawable) {
+            this.optionBackgroundDrable = drawable;
+            return this;
+        }
+
+        public Builder addOption(@NonNull String name, int color, @NonNull BottomDialog.OnOptionClickListener listener) {
             options.add(new Option(name, color, listener));
             return this;
         }
@@ -142,15 +150,16 @@ public class BottomDialog extends Dialog {
                     int padding = dp2px(context, DEFAULT_PADDING);
                     optionTextView.setPadding(padding, padding, padding, padding);
                     optionTextView.setText(option.name);
-                    optionTextView.setTextColor(option.color);
+                    optionTextView.setTextColor(ContextCompat.getColor(context, option.color));
+                    if (optionBackgroundDrable != 0) {
+                        optionTextView.setBackgroundResource(optionBackgroundDrable);
+                    }
                     optionTextView.setGravity(Gravity.CENTER);
                     optionTextView.setTextSize(DEFAULT_OPTION_SIZE);
                     optionTextView.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Log.d("ssss", "onClick: ");
                             if (option.listener != null) {
-                                Log.d("ssss", "onClick: ");
                                 option.listener.onOptionClick();
                             }
                             dialog.dismiss();
@@ -164,7 +173,6 @@ public class BottomDialog extends Dialog {
                         divider.setBackgroundColor(dividerColor);
                         dialog.layoutOptions.addView(divider, params);
                     }
-
                 }
             }
 
@@ -178,6 +186,10 @@ public class BottomDialog extends Dialog {
                 dialog.textCancel.setTextColor(cancelColor);
             }
 
+            if (optionBackgroundDrable != 0) {
+                dialog.textCancel.setBackgroundResource(optionBackgroundDrable);
+            }
+
             return dialog;
         }
 
@@ -188,9 +200,9 @@ public class BottomDialog extends Dialog {
     private static class Option {
         public String name;
         public int color;
-        public OnOptionClickListener listener;
+        public BottomDialog.OnOptionClickListener listener;
 
-        public Option(String name, int color, OnOptionClickListener listener) {
+        public Option(String name, int color, BottomDialog.OnOptionClickListener listener) {
             this.name = name;
             this.color = color;
             this.listener = listener;

@@ -61,17 +61,18 @@ public class DialogActivity extends BaseSubActivity {
 
     private void showBottomDialog() {
         BottomDialog.Builder builder = new BottomDialog.Builder(this);
-        builder.addOption("在浏览器打开", ContextCompat.getColor(this, R.color.base_black), new BottomDialog.OnOptionClickListener() {
-            @Override
-            public void onOptionClick() {
-                Log.d("ssss", "onOptionClick: ");
-                Toast.makeText(DialogActivity.this, "one", Toast.LENGTH_SHORT);
-            }
-        }).addOption("刷新", ContextCompat.getColor(this, R.color.base_black), new BottomDialog.OnOptionClickListener() {
-            @Override
-            public void onOptionClick() {
-                Toast.makeText(DialogActivity.this, "two", Toast.LENGTH_SHORT);
-            }
-        }).create().show();
+        builder.setOpitonBackgroundDrable(R.drawable.color_bottom_dialog_option)
+                .addOption("使用浏览器打开", R.color.base_black, new BottomDialog.OnOptionClickListener() {
+                    @Override
+                    public void onOptionClick() {
+                        Toast.makeText(DialogActivity.this, "one", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .addOption("刷新", R.color.base_black, new BottomDialog.OnOptionClickListener() {
+                    @Override
+                    public void onOptionClick() {
+                        Toast.makeText(DialogActivity.this, "two", Toast.LENGTH_SHORT).show();
+                    }
+                }).create().show();
     }
 }

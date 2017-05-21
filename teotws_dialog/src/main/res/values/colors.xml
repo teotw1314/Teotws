@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="color_divider">#e6e6e6</color>
+    <color name="color_bg_bottom_dialog">#f3f3f3</color>
+    <color name="color_bottom_dialog_option_active">#c8c8c8</color>
 </resources>
