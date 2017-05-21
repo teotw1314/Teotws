@@ -32,7 +32,6 @@ dependencies {
     compile project(':teotws_stickyitemecoration')
     compile project(':teotws_umeng')
     compile project(':teotws_base')
-
     //https://github.com/orhanobut/logger
     compile 'com.orhanobut:logger:1.15'
     //https://github.com/JakeWharton/butterknife
@@ -40,7 +39,7 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
     //https://github.com/CymChad/BaseRecyclerViewAdapterHelper/
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.4'
-//    https://github.com/hdodenhof/CircleImageView
+    //    https://github.com/hdodenhof/CircleImageView
     compile 'de.hdodenhof:circleimageview:2.1.0'
-
+    compile project(':teotws_dialog')
 }

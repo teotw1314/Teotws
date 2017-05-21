@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#00a0e9</color>
     <color name="colorAccent">#00a0e9</color>
 
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
     <!--loadview-->
     <color name="view_loading_error_title_color">#616161</color>
     <color name="view_loading_error_info_color">#9f9e9e</color>

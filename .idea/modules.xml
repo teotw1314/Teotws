@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Teotws.iml" filepath="$PROJECT_DIR$/Teotws.iml" />
       <module fileurl="file://$PROJECT_DIR$/teotws_base/teotws_base.iml" filepath="$PROJECT_DIR$/teotws_base/teotws_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/teotws_dialog/teotws_dialog.iml" filepath="$PROJECT_DIR$/teotws_dialog/teotws_dialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/teotws_main/teotws_main.iml" filepath="$PROJECT_DIR$/teotws_main/teotws_main.iml" />
       <module fileurl="file://$PROJECT_DIR$/teotws_playbill/teotws_playbill.iml" filepath="$PROJECT_DIR$/teotws_playbill/teotws_playbill.iml" />
       <module fileurl="file://$PROJECT_DIR$/teotws_stickyitemecoration/teotws_stickyitemecoration.iml" filepath="$PROJECT_DIR$/teotws_stickyitemecoration/teotws_stickyitemecoration.iml" />

@@ -77,8 +77,8 @@ public class TeotwsActivity extends BaseActivity {
     private void onClickItem(String tag) {
         if (tag.equals("PlayBill")) {
             TeotwsRouter.defaultRouter().pushPlayBillActivity(this);
-        }else if(tag.equals("ShoppingCart")){
-
+        }else if(tag.equals("DialogView")){
+            TeotwsRouter.defaultRouter().pushDialogActivity(this);
         }
     }
 

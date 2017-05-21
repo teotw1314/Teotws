@@ -4,6 +4,7 @@ import android.content.Context;
 
 
 import teotws.base.core.Router;
+import teotws.dialog.DialogActivity;
 import teotws.playbill.PlaybillActivity;
 
 /**
@@ -18,4 +19,8 @@ public class TeotwsRouter extends Router {
         PlaybillActivity.startActivity(setContext);
     }
 
+    @Override
+    public void pushDialogActivity(Context setContext) {
+        DialogActivity.startActivity(setContext);
+    }
 }
